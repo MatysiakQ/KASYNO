@@ -1,0 +1,24 @@
+name: Nowa funkcja
+ description: Zaproponuj funkcję lub element MVP
+ title: "feat: "
+ labels:
+  - type:task
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Cel
+      description: Co ma zostać osiągnięte?
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Kryteria akceptacji
+      description: Po czym poznamy, że zadanie jest wykonane?
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Zależności i ryzyka
