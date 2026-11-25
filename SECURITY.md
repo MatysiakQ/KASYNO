@@ -1,6 +1,6 @@
 # Bezpieczeństwo
 
-KASYNO jest projektem z wirtualną walutą. Nie umieszczaj w repozytorium haseł, tokenów, kluczy API ani danych użytkowników.
+KASYNO obsługuje konta, saldo w złotych polskich i płatności. Nie umieszczaj w repozytorium haseł, tokenów, kluczy API ani danych użytkowników. Nie przechowuj pełnych danych kart płatniczych w repozytorium ani w bazie aplikacji.
 
 ## Zgłaszanie problemów
 

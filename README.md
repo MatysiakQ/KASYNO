@@ -1,12 +1,13 @@
 # 🎰 KASYNO
 
-Webowa aplikacja edukacyjna symulująca kasyno z wirtualnymi żetonami. Projekt nie obsługuje prawdziwych pieniędzy, depozytów ani wypłat.
+Webowa aplikacja kasynowa obejmująca ruletkę i automat do gry, konta użytkowników, portfel, płatności oraz panel administracyjny. Saldo i stawki są prowadzone w złotych polskich, a łączna suma wygranych w profilu gracza jest prezentowana w pesos.
 
 ## Stack
 
 - Frontend: React + TypeScript
-- Backend: Python
+- Backend: FastAPI
 - Baza danych: PostgreSQL
+- Uruchamianie: Docker na prywatnym serwerze zespołu
 
 ## Dokumentacja
 
@@ -21,7 +22,7 @@ Najważniejsze strony:
 
 ## Status
 
-Projekt jest w fazie przygotowania przedimplementacyjnego. Najpierw zamykamy zakres MVP, role, decyzje techniczne i sposób pracy; kod powstanie po spotkaniu startowym.
+Projekt jest w trakcie realizacji. Fundament backendu i infrastruktury jest rozwijany na gałęzi `backend/site-foundation`; frontend oraz gry są kolejnymi obszarami prac. Dokumentacja projektu znajduje się w repozytorium i Wiki.
 
 ## Zasada pracy
 

@@ -193,7 +193,7 @@ Planowane sekcje panelu:
 
 ## 8. Technologie i infrastruktura
 
-- Backend: FastAPI — zapisane w dokumentacji projektu; wymaga ostatecznego potwierdzenia.
+- Backend: FastAPI — framework jest używany w gałęzi backendu Łukasza.
 - Frontend: React i TypeScript.
 - Baza danych: PostgreSQL.
 - Konteneryzacja: Docker.
