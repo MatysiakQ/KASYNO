@@ -1,7 +1,7 @@
 name: Błąd
- description: Zgłoś błąd lub regresję
- title: "bug: "
- labels:
+description: Zgłoś błąd lub regresję
+title: "bug: "
+labels:
   - bug
 body:
   - type: textarea
