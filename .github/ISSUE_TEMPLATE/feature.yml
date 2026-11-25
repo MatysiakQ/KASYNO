@@ -1,7 +1,7 @@
 name: Nowa funkcja
- description: Zaproponuj funkcję lub element MVP
- title: "feat: "
- labels:
+description: Zaproponuj funkcję lub element MVP
+title: "feat: "
+labels:
   - type:task
 body:
   - type: textarea
