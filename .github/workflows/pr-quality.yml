@@ -1,0 +1,30 @@
+name: Pull request quality
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  repository:
+    name: Repository checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Check changed lines for whitespace errors
+        run: git diff --check HEAD^1 HEAD
+      - name: Validate GitHub issue forms
+        run: |
+          ruby -ryaml -e '
+            forms = Dir[".github/ISSUE_TEMPLATE/*.{yml,yaml}"].reject { |f| File.basename(f).start_with?("config.") }
+            abort "No issue forms found" if forms.empty?
+            forms.each do |path|
+              form = YAML.safe_load_file(path)
+              abort "Invalid form: #{path}" unless form.is_a?(Hash) &&
+                %w[name description].all? { |key| form[key].is_a?(String) && !form[key].strip.empty? } &&
+                form["body"].is_a?(Array) && !form["body"].empty?
+            end'
